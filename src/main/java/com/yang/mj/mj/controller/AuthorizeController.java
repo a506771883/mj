@@ -27,5 +27,6 @@ public class AuthorizeController {
         GithubUser user = githubProvider.getUser(accessToken);
         System.out.println(user.getId());
         return "index";
+
     }
 }
