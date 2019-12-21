@@ -3,3 +3,9 @@ github:
   client:
     id: 6c68986ba20538ae6802
     secret: 974bd9951d0de64cb679a61840c8959cd4dc8188
+spring:
+  datasource:
+    url: jdbc:h2:~/community
+    data-username: sa
+    data-password: 123
+    driver-class-name: org.h2.Driver
