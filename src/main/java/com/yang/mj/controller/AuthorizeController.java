@@ -1,17 +1,16 @@
-package com.yang.mj.mj.controller;
+package com.yang.mj.controller;
 
-import com.yang.mj.mj.Entity.User;
-import com.yang.mj.mj.dto.AccessTokenDTO;
-import com.yang.mj.mj.dto.GithubUser;
-import com.yang.mj.mj.mapper.UserMapper;
-import com.yang.mj.mj.provider.GithubProvider;
+import com.yang.mj.dto.AccessTokenDTO;
+import com.yang.mj.dto.GithubUser;
+import com.yang.mj.Entity.User;
+import com.yang.mj.mapper.UserMapper;
+import com.yang.mj.provider.GithubProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import sun.net.httpserver.HttpServerImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.UUID;
@@ -49,7 +48,7 @@ public class AuthorizeController {
             User user = new User();
             user.setToken(UUID.randomUUID().toString());
             user.setName(githubUser.getName());
-            user.setAccount(String.valueOf(githubUser.getId()));
+            user.setAccountId(String.valueOf(githubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
             userMapper.insert(user);

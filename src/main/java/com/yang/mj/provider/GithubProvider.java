@@ -1,8 +1,8 @@
-package com.yang.mj.mj.provider;
+package com.yang.mj.provider;
 
 import com.alibaba.fastjson.JSON;
-import com.yang.mj.mj.dto.AccessTokenDTO;
-import com.yang.mj.mj.dto.GithubUser;
+import com.yang.mj.dto.GithubUser;
+import com.yang.mj.dto.AccessTokenDTO;
 import okhttp3.*;
 import org.springframework.stereotype.Component;
 
@@ -21,7 +21,6 @@ public class GithubProvider {
         try (Response response = client.newCall(request).execute()) {
             String string = response.body().string();
             String token = string.split("&")[0].split("=")[1];
-            System.out.println(string);
             return token;
         } catch (Exception e) {
             e.printStackTrace();
@@ -39,7 +38,6 @@ public class GithubProvider {
             Response response = client.newCall(request).execute();
             String string = response.body().string();
             GithubUser githubUser = JSON.parseObject(string, GithubUser.class);
-            System.out.println(githubUser);
             return githubUser;
         } catch (IOException e) {
             e.printStackTrace();

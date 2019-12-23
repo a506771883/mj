@@ -1,4 +1,4 @@
-package com.yang.mj.mj.controller;
+package com.yang.mj.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,4 +1,4 @@
-package com.yang.mj.mj.dto;
+package com.yang.mj.dto;
 
 import lombok.Data;
 

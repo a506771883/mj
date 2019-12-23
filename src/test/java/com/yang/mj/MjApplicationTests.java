@@ -1,4 +1,4 @@
-package com.yang.mj.mj;
+package com.yang.mj;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

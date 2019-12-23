@@ -1,4 +1,4 @@
-package com.yang.mj.mj.Entity;
+package com.yang.mj.Entity;
 
 import lombok.Data;
 
@@ -6,7 +6,7 @@ import lombok.Data;
 public class User {
     private Integer id;
     private String name;
-    private String account;
+    private String accountId;
     private String token;
     private Long gmtCreate;
     private Long gmtModified;
