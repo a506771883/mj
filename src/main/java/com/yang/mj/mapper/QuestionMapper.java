@@ -1,7 +1,6 @@
 package com.yang.mj.mapper;
 
-import com.sun.tracing.dtrace.ModuleAttributes;
-import com.yang.mj.Entity.Question;
+import com.yang.mj.entity.Question;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 

@@ -1,6 +1,6 @@
 package com.yang.mj.mapper;
 
-import com.yang.mj.Entity.User;
+import com.yang.mj.entity.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

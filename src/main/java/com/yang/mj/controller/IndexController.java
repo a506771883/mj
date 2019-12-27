@@ -1,11 +1,9 @@
 package com.yang.mj.controller;
 
-import com.yang.mj.Entity.User;
+import com.yang.mj.entity.User;
 import com.yang.mj.mapper.UserMapper;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;

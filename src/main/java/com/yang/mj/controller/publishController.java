@@ -1,7 +1,7 @@
 package com.yang.mj.controller;
 
-import com.yang.mj.Entity.Question;
-import com.yang.mj.Entity.User;
+import com.yang.mj.entity.Question;
+import com.yang.mj.entity.User;
 import com.yang.mj.mapper.QuestionMapper;
 import com.yang.mj.mapper.UserMapper;
 import org.springframework.stereotype.Controller;

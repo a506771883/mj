@@ -1,4 +1,4 @@
-package com.yang.mj.Entity;
+package com.yang.mj.entity;
 
 import lombok.Data;
 
