@@ -29,3 +29,5 @@ logging:
           mapper: debug
 mybatis:
   type-aliases-package: com.yang.mj.Entity
+  configuration:
+    map-underscore-to-camel-case: true
